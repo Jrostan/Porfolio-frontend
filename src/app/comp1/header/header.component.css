@@ -1,0 +1,168 @@
+*{
+    --anchorecomendado: auto;
+    --colorazul: #00358E;
+    --colortextoblanco: #eee;
+    --colorgris: #eee;
+    --colorgrisoscuro: #575757;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Bloque login */
+
+#log-in-contenedor{
+    width: 100%;
+    max-width: var(--anchorecomendado);
+    min-height: 4rem;
+    background-color: var(--colorazul, blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#log-in{
+    height: auto;
+    width: auto;
+}
+
+#logo-arg{
+    margin-left: 10px;
+    height: 4rem; 
+}
+
+#etiqueta-login{
+    height: 4rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#email{
+    grid-area: 1/3/2/5;
+    background-color: var(--colorazul, blue);
+    color: var(--colortextoblanco, white);
+    margin-top: 3px;
+    height: auto;
+}
+
+#password{
+    grid-area: 2/3/3/5;
+    background-color: var(--colorazul, blue);
+    color: var(--colortextoblanco, white);
+    margin-bottom: 3px;
+    height: auto;
+}
+
+#email:focus, #password:focus{
+    background-color: #3A4378;
+    border: none;
+}
+
+#boton{
+    grid-area: 1/5/3/6;
+    border-radius: 5px;
+    border: 1px solid var(--ccolorgris, silver);
+    background: var(--colorazul, blue);
+    color: var(--colortextoblanco, white);
+    width: auto;
+    height: auto;
+    margin: 3px;
+}
+
+#boton:hover{
+    background: var(--colorazul, blue);
+    color: var(--colortextoblanco, white);
+    box-shadow: inset -20px 20px 81px #9b9b9b,
+                inset 20px -20px 81px var(--colorazul, blue);
+}
+
+/* -------------------------------------------------------------------- */
+/* Linea banner */
+
+#banner-contenedor-foto{
+    height: 12rem;
+    width: 100%;
+    max-width: var(--anchorecomendado);
+    background: linear-gradient(180deg, var(--colorazul, blue) 5%, #eee ,var(--colorazul, blue) 95%);
+} 
+
+#contenedor-foto{
+    height: 10rem;
+    width: 8rem;
+    position: relative;
+    top: 1.5rem;
+    left: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--colorgrisoscuro, darkgrey);
+}
+
+#info-banner{
+    position: relative;
+    height: 10em;
+    width: 28em;
+    top: -8.5em;
+    left: 12em;
+}
+
+#Info-banner, h2 p{
+    margin-top: 4em; 
+  }
+
+#Info-banner p{
+    padding-left: 12px; 
+  }
+
+/* -------------------------------------------------------------------- */
+/* Linea aside */
+
+#aside-contenedor{
+    height: 3rem;
+    width: 100%;
+    max-width: var(--anchorecomendado);
+    background-color: var(--colorazul, blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--ccolorgris, silver);
+}
+
+#aside-lista{
+    height: inherit;
+    width: 905px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#aside-lista a{
+    display: block;
+    text-decoration: none;
+}
+
+#aside-lista .articulo-lista{
+    border: 1px solid silver;
+    height: 1.5em;
+    width: 9em;
+    background-color: var(--colorgris,silver);
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 0.25em;
+    color: var(--colorazul, blue);
+}
+
+#aside-lista .articulo-lista:hover{
+    background-color: var(--colorazul, blue);
+    color: var(--colorgris,silver);
+}

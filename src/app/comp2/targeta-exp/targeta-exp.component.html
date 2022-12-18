@@ -1,0 +1,11 @@
+<div class="contenedor-experiencia-laboral">
+    <h2 class="titulo-experiencia-laboral">{{tarjetas.puesto}}</h2>
+    <h3 class="fecha-experiencia-laboral">Desde <time class="entrada" datetime="07/2008">{{tarjetas.inicio}}</time> hasta <time class="salida" datetime="02/2010"> {{tarjetas.final}}</time>.</h3>
+    <p class="descripcion-puesto">{{tarjetas.dec_puesto}}</p>
+    <div class="contenedor-empresa">
+        <div class="contenedor-logo">
+            <img [src]="tarjetas.url_logo" [alt]="'Logo '+tarjetas.empresa" class="logo-empresa">
+        </div>
+        <h3 class="nombre-empresa">{{tarjetas.empresa}}</h3>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<header>
+    <div id="log-in-contenedor">
+        <div id="logo-arg">
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1666227203/Dise%C3%B1o%20sin%20t%C3%ADtulo%20%2817%29.png" alt="Logo argentina prograa 3.0 + inti argentina">
+        </div>
+        <form action="#" id="log-in" method="post" target="_blank">
+            <label form="log-in" id="etiqueta-login">
+                <input type="email" id="email" name="email" placeholder="Introdusca su email...">
+                <input type="password" name="password" id="password" placeholder="Contaseña...">
+                <input type="submit" value="Login" id="boton" name="entrar">
+            </label>
+        </form>
+    </div>
+    <div id="banner-contenedor-foto">
+        <div id="contenedor-foto">
+            <img [src]="datosPerfil[0].foto" alt="Foto del crador del porfolio">
+        </div>
+        <div id="info-banner">
+            <h2>{{datosPerfil[0].nombre}}</h2>
+            <p>{{datosPerfil[0].descripcion}}</p>
+        </div>
+    </div>   
+</header>
+
+<aside id="aside-contenedor">
+    <ul id="aside-lista">
+        <a routerlinck="/experiencias">
+            <li class="articulo-lista">Trabajos</li>
+        </a>
+        <a href="#Habilidades">
+            <li class="articulo-lista">Habilidades</li>
+        </a>
+        <a href="#capacitaciones">
+            <li class="articulo-lista">Capacitaciones</li>
+        </a>
+        <a href="#">
+            <li class="articulo-lista">Contacto</li>
+        </a>
+    </ul>
+</aside>
