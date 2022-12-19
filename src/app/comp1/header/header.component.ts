@@ -10,6 +10,7 @@ import { ServconectService } from 'src/app/service/servconect.service';
 export class HeaderComponent implements OnInit {
 
   datosPerfil: PerfilIBD[] = []; 
+  color: string = "red";
 
   titulo: string = "este es el header"
 
