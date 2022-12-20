@@ -1,7 +1,10 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
 import { PerfilIBD, ExpIDB, HabIDB, CapIDB  } from 'src/Int';
 import { HttpClient, HttpHandler } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
+
+import { DOCUMENT } from '@angular/common';
+
 
 @Injectable({
   providedIn: 'root'
@@ -15,8 +18,10 @@ export class ServconectService {
   private urlHab = this.apiURL+"Habilidades_digitales/";
   private urlCap = this.apiURL+"capacitaciones/";
   
+
   constructor(
     private http:HttpClient
+
   ) { }
 
   getPerfil(): Observable<PerfilIBD[]> {
@@ -34,4 +39,5 @@ export class ServconectService {
   getCap(): Observable<CapIDB[]> {
     return this.http.get<CapIDB[]>(this.urlCap);
   }
+
 }

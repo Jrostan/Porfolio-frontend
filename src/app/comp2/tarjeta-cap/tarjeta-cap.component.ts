@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { CapIDB } from 'src/Int';
 
 @Component({
   selector: 'app-tarjeta-cap',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tarjeta-cap.component.css']
 })
 export class TarjetaCapComponent implements OnInit {
+
+  @Input() tarjetas!: CapIDB
 
   constructor() { }
 

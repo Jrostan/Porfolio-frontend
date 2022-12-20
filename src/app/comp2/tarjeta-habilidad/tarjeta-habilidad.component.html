@@ -1,1 +1,12 @@
-<p>tarjeta-habilidad works!</p>
+<div id="contenedor-habilidades"
+[ngStyle]="{'--colorBaraFuerte': tarjeta.colorBaraFuerte,
+ '--colorBaraDebil': tarjeta.colorBaraDebil,
+ '--tecnologia': textoCss,
+ '--habilidad': habilidadCss,
+ '--avancePos': avancePos,
+ '--avanceNeg': avanceNeg}"
+>
+    <div id="html"
+    class="barras-de-progreso-circular"
+    ></div>
+</div>

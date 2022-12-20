@@ -1,0 +1,76 @@
+
+
+#contenedor-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    --tecnologia: "ala";
+    --habilidad: "44%";
+    --avancePos: 45deg;
+    --avanceNeg: -45deg;
+    --colorBaraFuerte: silver;
+    --colorBaraDebil: blue;
+
+}
+
+
+#Habilidades{
+    margin-left: 2rem;
+    background-color: var(--colordefondo);
+    height: 17rem;
+}
+
+#Habilidades h1{
+    color: var(--colorcontraste, silver);
+    margin-left: 0;
+}
+
+#html.barras-de-progreso-circular{
+    height: var(--altocaja, 12rem);
+    width: var(--anchocaja, 12rem);
+    margin: auto;
+    border-radius: 50%;
+    background: linear-gradient(
+        0deg,
+        var(--colorBaraFuerte) 50%,
+        var(--colorBaraDebil) 50%
+    );
+    position: relative;
+    transform: rotate(var(--avancePos));
+}
+
+#html.barras-de-progreso-circular:before{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    content: var(--tecnologia);
+    background: content-box var(--colordefondo);
+    padding: 0.5em;
+    box-sizing: border-box;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 8rem;
+    color: var(--colorcontraste);
+    transform: rotate(var(--avanceNeg));
+}
+
+#html.barras-de-progreso-circular:after{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    content: var(--habilidad);
+    background: linear-gradient(
+        transparent 50%,
+        var(--colordefondo) 50%
+    );
+    color: var(--colorcontraste);
+    text-align: center;
+    line-height: 13rem;
+    transform:scale(1.1) rotate(var(--avanceNeg));
+}

@@ -1,0 +1,41 @@
+.contenedor-cap{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    min-height: 10rem;
+    max-width: var(--anchorecomendado);
+    border-radius: 0px;
+    background: #eee;
+    box-shadow: inset 20px 20px 60px #bebebe,
+              inset -20px -20px 60px #ffffff;
+    border-bottom: 2px solid var(--colorgris, silver); 
+    margin-bottom: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.titulo-cap{
+    grid-column: 1/6;
+    grid-row: 1/2;
+    margin: 5px;
+}
+
+.descripcion-cap{
+    grid-column: 1/6;
+    grid-row: 2/6;
+    margin: 5px 5px 5px 10px;
+}
+
+.contendor-institucion{
+    grid-column: 7/9;
+    grid-row: 1/6;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-cap{
+    max-width: 100%;
+    max-height: auto;
+}

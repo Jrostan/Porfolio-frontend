@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CapIDB } from 'src/Int';
+import { ServconectService } from 'src/app/service/servconect.service';
 
 @Component({
   selector: 'app-capacitaciones',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CapacitacionesComponent implements OnInit {
 
-  constructor() { }
+  capacitaciones: CapIDB[] = [];
+
+  constructor(
+    private servconect: ServconectService
+  ) { }
 
   ngOnInit(): void {
+
+    this.servconect.getCap().subscribe((var1) =>(
+      this.capacitaciones = var1
+    ))
   }
 
 }

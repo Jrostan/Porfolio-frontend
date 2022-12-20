@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HabIDB } from 'src/Int';
+import { ServconectService } from 'src/app/service/servconect.service';
 
 @Component({
   selector: 'app-habilidades',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HabilidadesComponent implements OnInit {
 
-  constructor() { }
+  habilidades: HabIDB[] = [];
+
+  constructor(
+    private servconect: ServconectService
+  ) { }
 
   ngOnInit(): void {
+
+    this.servconect.getHab().subscribe((var1) =>(
+      this.habilidades = var1
+    ))
+
   }
 
 }

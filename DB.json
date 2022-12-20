@@ -4,7 +4,7 @@
         "id": 1,
         "nombre": "Javier Rostan",
         "descripcion": "Desarroyador web fullstack junionr. y proyectista mecanico Recide en Rafaela - Santa Fe - Argentina desde hace mas de 15 anños, Nacido en Santa fe - Argentina en el año 1989",
-        "foto": "#"
+        "foto": "/"
     }
  ],
  "experiencia_laboral": [
@@ -67,28 +67,28 @@
     {
         "id":1,
         "tecnologia": "HTML5",
-        "porcentaje": 40,
+        "porcentaje": "40",
         "colorBaraFuerte": "rgb(153, 85, 216)",
         "colorBaraDebil": "rgba(153,85,216,0.2)"
     },
     {
         "id":2,
         "tecnologia": "CSS3",
-        "porcentaje": 40,
+        "porcentaje": "40",
         "colorBaraFuerte": "rgb(216, 159, 85)",
         "colorBaraDebil": "rgba(216, 159, 85,0.2)"
     },
     {
         "id":3,
         "tecnologia": "JavaScript",
-        "porcentaje": 30,
+        "porcentaje": "30",
         "colorBaraFuerte": "rgb(27, 163, 22)",
         "colorBaraDebil": "rgba(27, 163, 22,0.2)"
     },
     {
         "id":4,
-        "tecnologia": "JavaScript",
-        "porcentaje": 30,
+        "tecnologia": "Angular",
+        "porcentaje": "20",
         "colorBaraFuerte": "rgb(163, 22, 22)",
         "colorBaraDebil": "rgba(163, 22, 22,0.2)"
     }

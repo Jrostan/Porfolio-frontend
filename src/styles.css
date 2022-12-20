@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --anchocaja: 12rem;
+    --altocaja: 12rem;
+    /* --colordefondo: rgb(43, 65, 90); */
+    --colordefondo: #fff;
+    --colorcontraste: rgb(148, 159, 170);
+    --colorcontraste2: #00358E;
+    --angulo:90deg;
+    --angulo2:-90deg;
+}
