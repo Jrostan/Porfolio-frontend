@@ -1,10 +1,15 @@
 import { Inject, Injectable } from '@angular/core';
 import { PerfilIBD, ExpIDB, HabIDB, CapIDB  } from 'src/Int';
-import { HttpClient, HttpHandler } from '@angular/common/http';
+import { HttpClient, HttpHeaders, } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 
 import { DOCUMENT } from '@angular/common';
 
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type':'application/json'
+  })
+};
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +28,7 @@ export class ServconectService {
     private http:HttpClient
 
   ) { }
-
+    /*Servicios Gets...*/
   getPerfil(): Observable<PerfilIBD[]> {
     return this.http.get<PerfilIBD[]>(this.urlHed);
   }
@@ -40,4 +45,17 @@ export class ServconectService {
     return this.http.get<CapIDB[]>(this.urlCap);
   }
 
+
+  /*Servicios Posts...*/
+  postExp(data: ExpIDB): Observable<ExpIDB> {
+    return this.http.post<ExpIDB>(this.urlExp, data, httpOptions);
+  }
+
+  postHab(data: HabIDB): Observable<HabIDB> {
+    return this.http.post<HabIDB>(this.urlHab, data, httpOptions);
+  }
+
+  postCap(data: CapIDB): Observable<CapIDB> {
+    return this.http.post<CapIDB>(this.urlCap, data, httpOptions);
+  }
 }

@@ -1,4 +1,9 @@
-<app-tarjeta-habilidad
+<app-form-hab
+    (agregarHabilidad)="agregarHabilidad($event)"
+></app-form-hab>
+<div id="prehab">
+<app-tarjeta-habilidad id="Habilidades"
     *ngFor="let t of habilidades"
     [tarjeta] = "t"
 ></app-tarjeta-habilidad>
+</div>

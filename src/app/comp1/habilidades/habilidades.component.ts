@@ -20,7 +20,12 @@ export class HabilidadesComponent implements OnInit {
     this.servconect.getHab().subscribe((var1) =>(
       this.habilidades = var1
     ))
+  }
 
+  agregarHabilidad(data: HabIDB) {
+    this.servconect.postHab(data).subscribe((data) => (
+      this.habilidades.push(data)
+    ))
   }
 
 }

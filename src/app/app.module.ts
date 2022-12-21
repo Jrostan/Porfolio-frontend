@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './comp1/header/header.component';
@@ -12,6 +13,9 @@ import { CapacitacionesComponent } from './comp1/capacitaciones/capacitaciones.c
 import { HabilidadesComponent } from './comp1/habilidades/habilidades.component';
 import { TarjetaCapComponent } from './comp2/tarjeta-cap/tarjeta-cap.component';
 import { TarjetaHabilidadComponent } from './comp2/tarjeta-habilidad/tarjeta-habilidad.component';
+import { FormCapComponent } from './comp3/form-cap/form-cap.component';
+import { FormExpComponent } from './comp3/form-exp/form-exp.component';
+import { FormHabComponent } from './comp3/form-hab/form-hab.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +26,16 @@ import { TarjetaHabilidadComponent } from './comp2/tarjeta-habilidad/tarjeta-hab
     CapacitacionesComponent,
     HabilidadesComponent,
     TarjetaCapComponent,
-    TarjetaHabilidadComponent
+    TarjetaHabilidadComponent,
+    FormCapComponent,
+    FormExpComponent,
+    FormHabComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

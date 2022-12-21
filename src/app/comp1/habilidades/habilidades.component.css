@@ -1,0 +1,22 @@
+#prehab{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Habilidades{
+    margin-left: 2rem;
+    background-color: var(--colordefondo);
+    height: 17rem;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 300px;
+}
+
+#Habilidades h1{
+    color: var(--colorcontraste, silver);
+    margin-left: 0;
+}

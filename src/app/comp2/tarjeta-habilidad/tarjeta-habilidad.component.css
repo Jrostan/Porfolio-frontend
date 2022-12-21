@@ -1,28 +1,15 @@
 
 
 #contenedor-habilidades{
-    display: flex;
-    flex-wrap: wrap;
+
     margin-top: 3rem;
+
     --tecnologia: "ala";
     --habilidad: "44%";
     --avancePos: 45deg;
     --avanceNeg: -45deg;
     --colorBaraFuerte: silver;
     --colorBaraDebil: blue;
-
-}
-
-
-#Habilidades{
-    margin-left: 2rem;
-    background-color: var(--colordefondo);
-    height: 17rem;
-}
-
-#Habilidades h1{
-    color: var(--colorcontraste, silver);
-    margin-left: 0;
 }
 
 #html.barras-de-progreso-circular{

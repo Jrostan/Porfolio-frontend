@@ -1,119 +1,486 @@
 {
- "perfil": [
+  "perfil": [
     {
-        "id": 1,
-        "nombre": "Javier Rostan",
-        "descripcion": "Desarroyador web fullstack junionr. y proyectista mecanico Recide en Rafaela - Santa Fe - Argentina desde hace mas de 15 anños, Nacido en Santa fe - Argentina en el año 1989",
-        "foto": "/"
+      "id": 1,
+      "nombre": "Javier Rostan",
+      "descripcion": "Desarroyador web fullstack junionr. y proyectista mecanico Recide en Rafaela - Santa Fe - Argentina desde hace mas de 15 anños, Nacido en Santa fe - Argentina en el año 1989",
+      "foto": "https://www.marengo.com.ar/images/logo.png"
     }
- ],
- "experiencia_laboral": [
+  ],
+  "experiencia_laboral": [
     {
-        "id": 1,
-        "puesto": "Proyectista de oficina tecnica y asistente de puesta en marcha y mantenimiento",
-        "inicio": "07/2008",
-        "final": "02/2010",
-        "dec_puesto": "Generacion de planos mecanicos y civiles destinados al mantenimiento de la planta industrial.",
-        "empresa": "Grupo Marengo",
-        "url_logo": "https://www.marengo.com.ar/images/logo.png"  
+      "id": 1,
+      "puesto": "Proyectista de oficina tecnica y asistente de puesta en marcha y mantenimiento",
+      "inicio": "07/2008",
+      "final": "02/2010",
+      "dec_puesto": "Generacion de planos mecanicos y civiles destinados al mantenimiento de la planta industrial.",
+      "empresa": "Grupo Marengo",
+      "url_logo": "https://www.marengo.com.ar/images/logo.png"
     },
     {
-        "id": 2,
-        "puesto": "Proyectista mecanico de compresores a tornillos",
-        "inicio": "02/2010",
-        "final": "03/2011",
-        "dec_puesto": "ingeniería de detalle y generación de planos mecánicos para el paqueteado de compresores a tornillos avocados a las industrias del petróleo y la refrigeración.",
-        "empresa": "VMC Refrigeracion S.A.",
-        "url_logo": "https://vmc.com.ar/wp-content/uploads/2019/05/VMC_Home_Logo-1.png"  
+      "id": 2,
+      "puesto": "Proyectista mecanico de compresores a tornillos",
+      "inicio": "02/2010",
+      "final": "03/2011",
+      "dec_puesto": "ingeniería de detalle y generación de planos mecánicos para el paqueteado de compresores a tornillos avocados a las industrias del petróleo y la refrigeración.",
+      "empresa": "VMC Refrigeracion S.A.",
+      "url_logo": "https://vmc.com.ar/wp-content/uploads/2019/05/VMC_Home_Logo-1.png"
     },
     {
-        "id": 3,
-        "puesto": "Proyectista mecanico de oficina tecnica",
-        "inicio": "03/2011",
-        "final": "12/2014",
-        "dec_puesto": "ingenieria en detalle y generacion de planos de compresores a tornillos, unidades frigorificas compactas, equipos de tratamineto de residuos domesticos, unidades compresoras para la industria p[etroquimica.",
-        "empresa": "VMC Refrigeracion S.A.",
-        "url_logo": "https://vmc.com.ar/wp-content/uploads/2019/05/VMC_Home_Logo-1.png"  
+      "id": 3,
+      "puesto": "Proyectista mecanico de oficina tecnica",
+      "inicio": "03/2011",
+      "final": "12/2014",
+      "dec_puesto": "ingenieria en detalle y generacion de planos de compresores a tornillos, unidades frigorificas compactas, equipos de tratamineto de residuos domesticos, unidades compresoras para la industria p[etroquimica.",
+      "empresa": "VMC Refrigeracion S.A.",
+      "url_logo": "https://vmc.com.ar/wp-content/uploads/2019/05/VMC_Home_Logo-1.png"
     },
     {
-        "id": 4,
-        "puesto": "Proyectista electromecanico de montaje industrial",
-        "inicio": "01/2015",
-        "final": "08/2021",
-        "dec_puesto": "Diseño y optimizacion de instalaciones frigorificas y servicios a fines; Gestion de contratistas y proveedores, generaciond de planos y pliegos tecnicos, Analisis tecnicoeconomico de proyectos de montaje industrial. Co corinacion con ingenieria civil de camaras y salas de maquinas dentro de la industria frigorifica. Diseño de layout de salas de maquinas, vamaras y tuneles de congelado. Cotizacion de mopntajes para servicios auxiliares, Diseño de instalaciones electricas de baja tension para sistemas de refrigeracion industrial.",
-        "empresa": "VMC Refrigeracion S.A.",
-        "url_logo": "https://vmc.com.ar/wp-content/uploads/2019/05/VMC_Home_Logo-1.png"  
+      "id": 4,
+      "puesto": "Proyectista electromecanico de montaje industrial",
+      "inicio": "01/2015",
+      "final": "08/2021",
+      "dec_puesto": "Diseño y optimizacion de instalaciones frigorificas y servicios a fines; Gestion de contratistas y proveedores, generaciond de planos y pliegos tecnicos, Analisis tecnicoeconomico de proyectos de montaje industrial. Co corinacion con ingenieria civil de camaras y salas de maquinas dentro de la industria frigorifica. Diseño de layout de salas de maquinas, vamaras y tuneles de congelado. Cotizacion de mopntajes para servicios auxiliares, Diseño de instalaciones electricas de baja tension para sistemas de refrigeracion industrial.",
+      "empresa": "VMC Refrigeracion S.A.",
+      "url_logo": "https://vmc.com.ar/wp-content/uploads/2019/05/VMC_Home_Logo-1.png"
     },
     {
-        "id": 5,
-        "puesto": "Director de obra",
-        "inicio": "01/2015",
-        "final": "08/2021",
-        "dec_puesto": "Control de calidad de materiales, gestion de contratistas, Liderasgo de equipos de trabajo metal-mecanicos en tareas de preparacion, construccion y montaje de piping, aislaciones termicas y tendidos electricos de baja tension. Toma de decisiones y coordinacion de personal e instalaciones de servicios, en condiciones criticas. interpretacion y relevamaiento de instalaciones frigorificas y servicios auxiliares.",
-        "empresa": "VMC Refrigeracion S.A.",
-        "url_logo": "https://vmc.com.ar/wp-content/uploads/2019/05/VMC_Home_Logo-1.png"  
+      "id": 5,
+      "puesto": "Director de obra",
+      "inicio": "01/2015",
+      "final": "08/2021",
+      "dec_puesto": "Control de calidad de materiales, gestion de contratistas, Liderasgo de equipos de trabajo metal-mecanicos en tareas de preparacion, construccion y montaje de piping, aislaciones termicas y tendidos electricos de baja tension. Toma de decisiones y coordinacion de personal e instalaciones de servicios, en condiciones criticas. interpretacion y relevamaiento de instalaciones frigorificas y servicios auxiliares.",
+      "empresa": "VMC Refrigeracion S.A.",
+      "url_logo": "https://vmc.com.ar/wp-content/uploads/2019/05/VMC_Home_Logo-1.png"
     },
     {
-        "id": 6,
-        "puesto": "Proyectista mecanico",
-        "inicio": "03/2022",
-        "final": "12/2022",
-        "dec_puesto": "Ingenieria y generacion de planos constructivos (mecanicos) para loa fabricacion de equipos dedicados a la industria del la energia (petroleo y gas, minetia, Etc.).",
-        "empresa": "Metalurgica SICA S.A.",
-        "url_logo": "https://sica.net.ar/wp-content/uploads/2022/03/logo-footer-1.png"  
+      "id": 6,
+      "puesto": "Proyectista mecanico",
+      "inicio": "03/2022",
+      "final": "12/2022",
+      "dec_puesto": "Ingenieria y generacion de planos constructivos (mecanicos) para loa fabricacion de equipos dedicados a la industria del la energia (petroleo y gas, minetia, Etc.).",
+      "empresa": "Metalurgica SICA S.A.",
+      "url_logo": "https://sica.net.ar/wp-content/uploads/2022/03/logo-footer-1.png"
+    },
+    {
+      "puesto": "Desarroyador Jr",
+      "inicio": "12/2022",
+      "final": "12/9999",
+      "dec_puesto": "Desarroyador web fullstack junionr. pero no tengo idea de que estoy haciendo",
+      "empresa": "desde casa",
+      "url_logo": "https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/7/7b/3r0849.jpg",
+      "id": 7
+    },
+    {
+      "puesto": "Desarroyador Jr",
+      "inicio": "12/2022",
+      "final": "12/9999",
+      "dec_puesto": "Desarroyador web fullstack junionr. pero no tengo idea de que estoy haciendo",
+      "empresa": "desde casa",
+      "url_logo": "https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/7/7b/3r0849.jpg",
+      "id": 8
+    },
+    {
+      "puesto": "Desarroyador Jr",
+      "inicio": "12/2022",
+      "final": "12/9999",
+      "dec_puesto": "Desarroyador web fullstack junionr. pero no tengo idea de que estoy haciendo",
+      "empresa": "desde casa",
+      "url_logo": "https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/7/7b/3r0849.jpg",
+      "id": 9
+    },
+    {
+      "puesto": "Desarroyador Jr",
+      "inicio": "12/2022",
+      "final": "12/9999",
+      "dec_puesto": "Desarroyador web fullstack junionr. pero no tengo idea de que estoy haciendo",
+      "empresa": "desde casa",
+      "url_logo": "https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/7/7b/3r0849.jpg",
+      "id": 10
+    },
+    {
+      "puesto": "Desarroyador Jr",
+      "inicio": "12/2022",
+      "final": "12/9999",
+      "dec_puesto": "Desarroyador web fullstack junionr. pero no tengo idea de que estoy haciendo",
+      "empresa": "desde casa",
+      "url_logo": "https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/7/7b/3r0849.jpg",
+      "id": 11
     }
- ],
- "Habilidades_digitales": [
+  ],
+  "Habilidades_digitales": [
     {
-        "id":1,
-        "tecnologia": "HTML5",
-        "porcentaje": "40",
-        "colorBaraFuerte": "rgb(153, 85, 216)",
-        "colorBaraDebil": "rgba(153,85,216,0.2)"
+      "id": 1,
+      "tecnologia": "HTML5",
+      "porcentaje": "40",
+      "colorBaraFuerte": "rgb(153, 85, 216)",
+      "colorBaraDebil": "rgba(153,85,216,0.2)"
     },
     {
-        "id":2,
-        "tecnologia": "CSS3",
-        "porcentaje": "40",
-        "colorBaraFuerte": "rgb(216, 159, 85)",
-        "colorBaraDebil": "rgba(216, 159, 85,0.2)"
+      "id": 2,
+      "tecnologia": "CSS3",
+      "porcentaje": "40",
+      "colorBaraFuerte": "rgb(216, 159, 85)",
+      "colorBaraDebil": "rgba(216, 159, 85,0.2)"
     },
     {
-        "id":3,
-        "tecnologia": "JavaScript",
-        "porcentaje": "30",
-        "colorBaraFuerte": "rgb(27, 163, 22)",
-        "colorBaraDebil": "rgba(27, 163, 22,0.2)"
+      "id": 3,
+      "tecnologia": "JavaScript",
+      "porcentaje": "30",
+      "colorBaraFuerte": "rgb(27, 163, 22)",
+      "colorBaraDebil": "rgba(27, 163, 22,0.2)"
     },
     {
-        "id":4,
-        "tecnologia": "Angular",
-        "porcentaje": "20",
-        "colorBaraFuerte": "rgb(163, 22, 22)",
-        "colorBaraDebil": "rgba(163, 22, 22,0.2)"
+      "id": 4,
+      "tecnologia": "Angular",
+      "porcentaje": "20",
+      "colorBaraFuerte": "rgb(163, 22, 22)",
+      "colorBaraDebil": "rgba(163, 22, 22,0.2)"
+    },
+    {
+      "tecnologia": "ANGULAR 3",
+      "porcentaje": null,
+      "colorBaraFuerte": "",
+      "colorBaraDebil": "rgba(undefined,undefined,undefined,0.2)",
+      "id": 5
+    },
+    {
+      "tecnologia": "Angular 2.0",
+      "porcentaje": 42,
+      "colorBaraFuerte": "#3996a2",
+      "colorBaraDebil": "rgba(57,150,162,0.2)",
+      "id": 6
+    },
+    {
+      "tecnologia": "Angular 2.0",
+      "porcentaje": 42,
+      "colorBaraFuerte": "#3996a2",
+      "colorBaraDebil": "rgba(57,150,162,0.2)",
+      "id": 7
+    },
+    {
+      "tecnologia": "Angular 2.0",
+      "porcentaje": 42,
+      "colorBaraFuerte": "#3996a2",
+      "colorBaraDebil": "rgba(57,150,162,0.2)",
+      "id": 8
+    },
+    {
+      "tecnologia": "Angular 2.0",
+      "porcentaje": 42,
+      "colorBaraFuerte": "#3996a2",
+      "colorBaraDebil": "rgba(57,150,162,0.2)",
+      "id": 9
+    },
+    {
+      "tecnologia": "Angular 2.0",
+      "porcentaje": 42,
+      "colorBaraFuerte": "#3996a2",
+      "colorBaraDebil": "rgba(57,150,162,0.2)",
+      "id": 10
+    },
+    {
+      "tecnologia": "Angular 2.0",
+      "porcentaje": 42,
+      "colorBaraFuerte": "#73a239",
+      "colorBaraDebil": "rgba(115,162,57,0.2)",
+      "id": 11
+    },
+    {
+      "tecnologia": "Angular 2.0",
+      "porcentaje": 42,
+      "colorBaraFuerte": "#73a239",
+      "colorBaraDebil": "rgba(115,162,57,0.2)",
+      "id": 12
+    },
+    {
+      "tecnologia": "BOludeces",
+      "porcentaje": 96,
+      "colorBaraFuerte": "#000000",
+      "colorBaraDebil": "rgba(0,0,0,0.2)",
+      "id": 13
+    },
+    {
+      "tecnologia": "BOludeces",
+      "porcentaje": 100,
+      "colorBaraFuerte": "#000000",
+      "colorBaraDebil": "rgba(0,0,0,0.2)",
+      "id": 14
+    },
+    {
+      "tecnologia": "kajsgdfh",
+      "porcentaje": null,
+      "colorBaraFuerte": "#cd3c3c",
+      "colorBaraDebil": "rgba(205,60,60,0.2)",
+      "id": 15
+    },
+    {
+      "tecnologia": "algo 2s",
+      "porcentaje": 0,
+      "colorBaraFuerte": "#8baa1d",
+      "colorBaraDebil": "rgba(139,170,29,0.2)",
+      "id": 16
     }
- ],
- "capacitaciones": [
+  ],
+  "capacitaciones": [
     {
-        "id":1,
-        "ftitulo": "Tecnico superior en mantenimiento electromecanico",
-        "descripcion": "Tecnicatura superior en mantenimiento y montaje de equipos automatizados",
-        "url_logo": "https://itecrafaela.edu.ar/static/img/logo.itec.png",
-        "formador": "ITec Rafaela"
+      "id": 1,
+      "ftitulo": "Tecnico superior en mantenimiento electromecanico",
+      "descripcion": "Tecnicatura superior en mantenimiento y montaje de equipos automatizados",
+      "url_logo": "https://itecrafaela.edu.ar/static/img/logo.itec.png",
+      "formador": "ITec Rafaela"
     },
     {
-        "id":2,
-        "ftitulo": "Desarrollador web fullstack Jr.",
-        "descripcion": "Grupo de tecnologias necesarias para el desarrolo web fullstack",
-        "url_logo": "https://argentinaprograma.inti.gob.ar/pluginfile.php/127650/course/overviewfiles/MINIATURA-ARGEPROGR.jpg",
-        "formador": "ProgramaNacional Argentina programa"
+      "id": 2,
+      "ftitulo": "Desarrollador web fullstack Jr.",
+      "descripcion": "Grupo de tecnologias necesarias para el desarrolo web fullstack",
+      "url_logo": "https://argentinaprograma.inti.gob.ar/pluginfile.php/127650/course/overviewfiles/MINIATURA-ARGEPROGR.jpg",
+      "formador": "ProgramaNacional Argentina programa"
     },
     {
-        "id":3,
-        "ftitulo": "Diseño web responsivo (HTML & CSS)",
-        "descripcion": "En esta Certificación de Diseño Web Responsivo, aprenderás los lenguajes que los desarrolladores utilizan para construir páginas web: HTML (lenguaje de marcado de hipertexto) para el contenido, y CSS (Hojas de estilo en cascada) para el diseño.",
-        "url_logo": "https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png",
-        "formador": "FreeCodeCamp"
+      "id": 3,
+      "ftitulo": "Diseño web responsivo (HTML & CSS)",
+      "descripcion": "En esta Certificación de Diseño Web Responsivo, aprenderás los lenguajes que los desarrolladores utilizan para construir páginas web: HTML (lenguaje de marcado de hipertexto) para el contenido, y CSS (Hojas de estilo en cascada) para el diseño.",
+      "url_logo": "https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png",
+      "formador": "FreeCodeCamp"
+    },
+    {
+      "ftitulo": "lugar 123456",
+      "descripcion": "haciamos de todo para sobrevivir",
+      "url_logo": "https://vmc.com.ar/wp-content/uploads/2019/05/VMC_Home_Logo-1.png",
+      "formador": "nadie",
+      "id": 4
+    },
+    {
+      "ftitulo": "asdasdasd",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 5
+    },
+    {
+      "ftitulo": "asdasdasd",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 6
+    },
+    {
+      "ftitulo": "asdasdasd",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 7
+    },
+    {
+      "ftitulo": "asdasdasd",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 8
+    },
+    {
+      "ftitulo": "asdasdasd",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 9
+    },
+    {
+      "ftitulo": "asdasdasd",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 10
+    },
+    {
+      "ftitulo": "asdasdasd",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 11
+    },
+    {
+      "ftitulo": "asdasdasd",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 12
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 13
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 14
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 15
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 16
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 17
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 18
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 19
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 20
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 21
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 22
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 23
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 24
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 25
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 26
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 27
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 28
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 29
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 30
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 31
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 32
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 33
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 34
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 35
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 36
+    },
+    {
+      "ftitulo": "123",
+      "descripcion": "",
+      "url_logo": "",
+      "formador": "",
+      "id": 37
     }
- ]
+  ]
 }

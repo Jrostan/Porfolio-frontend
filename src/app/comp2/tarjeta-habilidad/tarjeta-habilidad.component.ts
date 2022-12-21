@@ -24,8 +24,8 @@ export class TarjetaHabilidadComponent implements OnInit {
   ngOnInit(): void {
     this.textoCss ='"'+this.tarjeta.tecnologia+'"'
     this.habilidadCss = '"'+this.tarjeta.porcentaje+'%"'
-    this.avancePos = this.tarjeta.porcentaje+"deg"
-    this.avanceNeg = '-'+this.tarjeta.porcentaje+'deg'
+    this.avancePos = (180*(this.tarjeta.porcentaje/100))+"deg"
+    this.avanceNeg = '-'+(180*(this.tarjeta.porcentaje/100))+'deg'
     //console.log(this.tarjeta.porcentaje);
     //console.log(this.habilidadCss)
   }

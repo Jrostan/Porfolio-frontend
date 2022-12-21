@@ -1,0 +1,42 @@
+<form class="formulario-completo" (ngSubmit)="cargarExp()">
+    <div class="form-hab-control">
+        <label for="puesto">Puesto:</label>
+            <input type="text" name="puesto" id="puesto" placeholder="Introdusca en cargo desempeñado"
+            [(ngModel)]="puesto">
+    </div>
+
+    <div class="form-hab-control">
+        <label for="descpuesto">Descripcion puesto:</label>
+            <input type="text" name="descpuesto" id="descpuesto" placeholder="Introdusca una brebe descripcionde sus tareas..."
+            [(ngModel)]="descpuesto">
+    </div>
+
+    <div class="form-hab-control">
+        <label for="inicio">Fecha de inicio:</label>
+            <input type="mes" name="inicio" id="inicio" placeholder="MM / YYYY"
+            [(ngModel)]="inicio">
+    </div>
+
+    <div class="form-hab-control">
+        <label for="fin">Fecha de fin:</label>
+            <input type="text" name="fin" id="fin" placeholder="MM / YYYY"
+            [(ngModel)]="fin">
+    </div>
+
+    <div class="form-hab-control">
+        <label for="lugar">Institucion:</label>
+            <input type="text" name="lugar" id="lugar" placeholder="Donde?"
+            [(ngModel)]="lugar">
+    </div>
+
+    <div class="form-hab-control">
+        <label for="urllogo">Logo institucion:</label>
+            <input type="text" name="urllogo" id="urllogo" placeholder="Direccion del logo..."
+            [(ngModel)]="logo">
+    </div>
+
+    <div class="form-cap-control">
+        <label for="enviar"></label>
+            <input type="submit" name="enviar" value="Agregar">
+    </div>
+</form>

@@ -23,4 +23,9 @@ export class ExpLabComponent implements OnInit {
     ))
   }
 
+  agregarExperiencia(data: ExpIDB) {
+    this.servconect.postExp(data).subscribe((data) => (
+      this.experiencias.push(data)
+    )); 
+  }
 }

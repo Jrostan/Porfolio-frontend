@@ -21,5 +21,10 @@ export class CapacitacionesComponent implements OnInit {
       this.capacitaciones = var1
     ))
   }
-
+  
+  agregarCpacitacion(data: CapIDB) {
+    this.servconect.postCap(data).subscribe((data) => (
+      this.capacitaciones.push(data)
+    ));
+  }
 }
