@@ -8,4 +8,8 @@
         </div>
         <h3 class="nombre-empresa">{{tarjetas.empresa}}</h3>
     </div>
+    <div class="delete">
+        <fa-icon [icon]="faTimes" class="cruz"
+        (click)="borrarExp(tarjetas)"></fa-icon>
+    </div>
 </div>

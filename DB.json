@@ -88,24 +88,6 @@
       "empresa": "desde casa",
       "url_logo": "https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/7/7b/3r0849.jpg",
       "id": 9
-    },
-    {
-      "puesto": "Desarroyador Jr",
-      "inicio": "12/2022",
-      "final": "12/9999",
-      "dec_puesto": "Desarroyador web fullstack junionr. pero no tengo idea de que estoy haciendo",
-      "empresa": "desde casa",
-      "url_logo": "https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/7/7b/3r0849.jpg",
-      "id": 10
-    },
-    {
-      "puesto": "Desarroyador Jr",
-      "inicio": "12/2022",
-      "final": "12/9999",
-      "dec_puesto": "Desarroyador web fullstack junionr. pero no tengo idea de que estoy haciendo",
-      "empresa": "desde casa",
-      "url_logo": "https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/7/7b/3r0849.jpg",
-      "id": 11
     }
   ],
   "Habilidades_digitales": [
@@ -138,13 +120,6 @@
       "colorBaraDebil": "rgba(163, 22, 22,0.2)"
     },
     {
-      "tecnologia": "ANGULAR 3",
-      "porcentaje": null,
-      "colorBaraFuerte": "",
-      "colorBaraDebil": "rgba(undefined,undefined,undefined,0.2)",
-      "id": 5
-    },
-    {
       "tecnologia": "Angular 2.0",
       "porcentaje": 42,
       "colorBaraFuerte": "#3996a2",
@@ -175,13 +150,6 @@
     {
       "tecnologia": "Angular 2.0",
       "porcentaje": 42,
-      "colorBaraFuerte": "#3996a2",
-      "colorBaraDebil": "rgba(57,150,162,0.2)",
-      "id": 10
-    },
-    {
-      "tecnologia": "Angular 2.0",
-      "porcentaje": 42,
       "colorBaraFuerte": "#73a239",
       "colorBaraDebil": "rgba(115,162,57,0.2)",
       "id": 11
@@ -206,20 +174,6 @@
       "colorBaraFuerte": "#000000",
       "colorBaraDebil": "rgba(0,0,0,0.2)",
       "id": 14
-    },
-    {
-      "tecnologia": "kajsgdfh",
-      "porcentaje": null,
-      "colorBaraFuerte": "#cd3c3c",
-      "colorBaraDebil": "rgba(205,60,60,0.2)",
-      "id": 15
-    },
-    {
-      "tecnologia": "algo 2s",
-      "porcentaje": 0,
-      "colorBaraFuerte": "#8baa1d",
-      "colorBaraDebil": "rgba(139,170,29,0.2)",
-      "id": 16
     }
   ],
   "capacitaciones": [
@@ -250,62 +204,6 @@
       "url_logo": "https://vmc.com.ar/wp-content/uploads/2019/05/VMC_Home_Logo-1.png",
       "formador": "nadie",
       "id": 4
-    },
-    {
-      "ftitulo": "asdasdasd",
-      "descripcion": "",
-      "url_logo": "",
-      "formador": "",
-      "id": 5
-    },
-    {
-      "ftitulo": "asdasdasd",
-      "descripcion": "",
-      "url_logo": "",
-      "formador": "",
-      "id": 6
-    },
-    {
-      "ftitulo": "asdasdasd",
-      "descripcion": "",
-      "url_logo": "",
-      "formador": "",
-      "id": 7
-    },
-    {
-      "ftitulo": "asdasdasd",
-      "descripcion": "",
-      "url_logo": "",
-      "formador": "",
-      "id": 8
-    },
-    {
-      "ftitulo": "asdasdasd",
-      "descripcion": "",
-      "url_logo": "",
-      "formador": "",
-      "id": 9
-    },
-    {
-      "ftitulo": "asdasdasd",
-      "descripcion": "",
-      "url_logo": "",
-      "formador": "",
-      "id": 10
-    },
-    {
-      "ftitulo": "asdasdasd",
-      "descripcion": "",
-      "url_logo": "",
-      "formador": "",
-      "id": 11
-    },
-    {
-      "ftitulo": "asdasdasd",
-      "descripcion": "",
-      "url_logo": "",
-      "formador": "",
-      "id": 12
     },
     {
       "ftitulo": "123",

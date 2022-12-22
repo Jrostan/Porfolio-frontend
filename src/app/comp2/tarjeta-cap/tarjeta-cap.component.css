@@ -39,3 +39,25 @@
     max-width: 100%;
     max-height: auto;
 }
+
+.delete{
+    display: block;
+    position: relative;
+    bottom: 0px;
+    left: 5px;
+    z-index: 10;
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+.cruz{
+    color: red;
+}
+
+.cruz:hover{
+    color: white;
+    background-color: red;
+    border: solid 0px red;
+    border-radius: 50%;
+    cursor: pointer;
+}

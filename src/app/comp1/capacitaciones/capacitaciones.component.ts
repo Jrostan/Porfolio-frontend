@@ -27,4 +27,10 @@ export class CapacitacionesComponent implements OnInit {
       this.capacitaciones.push(data)
     ));
   }
+
+  borrar(val: CapIDB) {
+    this.servconect.deltCap(val).subscribe(()=>(
+      this.capacitaciones = this.capacitaciones.filter(temp => temp.id !== val.id)
+    ))
+  }
 }

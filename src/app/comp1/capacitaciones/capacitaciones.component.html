@@ -4,4 +4,5 @@
 <app-tarjeta-cap
     *ngFor="let t of capacitaciones"
     [tarjetas] = "t"
+    (deletCapacitaciones)="borrar(t)"
 ></app-tarjeta-cap>

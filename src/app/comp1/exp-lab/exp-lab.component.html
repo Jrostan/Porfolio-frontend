@@ -5,6 +5,7 @@
     <app-targeta-exp 
         *ngFor="let t of experiencias"
         [tarjetas] = "t"
+        (deletExperiencia)="borrar(t)"
         >
     </app-targeta-exp>
 </div>

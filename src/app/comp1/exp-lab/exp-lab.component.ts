@@ -28,4 +28,10 @@ export class ExpLabComponent implements OnInit {
       this.experiencias.push(data)
     )); 
   }
+
+  borrar(val: ExpIDB) {
+    this.servconect.deltExp(val).subscribe(()=>(
+      this.experiencias = this.experiencias.filter(temp => temp.id !== val.id)
+    ))
+  }
 }

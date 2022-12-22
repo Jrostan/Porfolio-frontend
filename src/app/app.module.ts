@@ -16,6 +16,7 @@ import { TarjetaHabilidadComponent } from './comp2/tarjeta-habilidad/tarjeta-hab
 import { FormCapComponent } from './comp3/form-cap/form-cap.component';
 import { FormExpComponent } from './comp3/form-exp/form-exp.component';
 import { FormHabComponent } from './comp3/form-hab/form-hab.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FormHabComponent } from './comp3/form-hab/form-hab.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

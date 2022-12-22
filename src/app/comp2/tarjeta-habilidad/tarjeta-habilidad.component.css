@@ -10,6 +10,7 @@
     --avanceNeg: -45deg;
     --colorBaraFuerte: silver;
     --colorBaraDebil: blue;
+    display: flex;
 }
 
 #html.barras-de-progreso-circular{
@@ -60,4 +61,23 @@
     text-align: center;
     line-height: 13rem;
     transform:scale(1.1) rotate(var(--avanceNeg));
+}
+.delete{
+    display: block;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+}
+
+.cruz{
+    color: red;
+}
+
+.cruz:hover{
+    color: white;
+    background-color: red;
+    border: solid 0px red;
+    border-radius: 50%;
+    cursor: pointer;
 }

@@ -1,6 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { HabIDB } from 'src/Int';
 import { ServconectService } from 'src/app/service/servconect.service';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -9,7 +10,11 @@ import { ServconectService } from 'src/app/service/servconect.service';
   styleUrls: ['./tarjeta-habilidad.component.css']
 })
 export class TarjetaHabilidadComponent implements OnInit {
-  
+  habilidades: HabIDB[] = [];
+  faTimes = faTimes;
+
+  @Output() deletHabilidad: EventEmitter<HabIDB> = new EventEmitter;
+
   @Input() tarjeta!: HabIDB;
   textoCss!: string;
   habilidadCss!: string;
@@ -26,7 +31,9 @@ export class TarjetaHabilidadComponent implements OnInit {
     this.habilidadCss = '"'+this.tarjeta.porcentaje+'%"'
     this.avancePos = (180*(this.tarjeta.porcentaje/100))+"deg"
     this.avanceNeg = '-'+(180*(this.tarjeta.porcentaje/100))+'deg'
-    //console.log(this.tarjeta.porcentaje);
-    //console.log(this.habilidadCss)
   }
+
+  borraHab(val: HabIDB) {
+    this.deletHabilidad.emit(val)
+  };
 }

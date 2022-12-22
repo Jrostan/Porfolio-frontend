@@ -1,3 +1,4 @@
+<div class="cont">
 <div class="contenedor-cap">
     <h2 class="titulo-cap">{{tarjetas.ftitulo}}</h2>
     <p class="descripcion-cap">{{tarjetas.descripcion}}</p>
@@ -6,5 +7,11 @@
             <img [src]="tarjetas.url_logo" alt="Logo Itec Rafaela" class="logo-cap">
         </div>
         <h3 class="institucion-cap">{{tarjetas.formador}}</h3>
-    </div>    
+    </div>   
+    <div class="delete">
+        <fa-icon [icon]="faTimes" class="cruz"
+        (click)="borrarCap(tarjetas)"></fa-icon>
+    </div> 
+</div>
+
 </div>

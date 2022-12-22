@@ -28,4 +28,10 @@ export class HabilidadesComponent implements OnInit {
     ))
   }
 
+  borrar(val:HabIDB){
+    this.servconect.deltHab(val).subscribe(()=>(
+      this.habilidades = this.habilidades.filter(temp => temp.id !== val.id)
+    ))
+  }
+
 }
