@@ -11,6 +11,7 @@
     ></div>
     <div class="delete">
         <fa-icon [icon]="faTimes" class="cruz"
-        (click)="borraHab(tarjeta)"></fa-icon>
+        (click)="borraHab(tarjeta)"
+        *ngIf="!status"></fa-icon>
     </div>
 </div>

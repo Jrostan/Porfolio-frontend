@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ExpIDB } from 'src/Int';
 import { ServconectService } from 'src/app/service/servconect.service';
+import { AuthService } from 'src/app/service/auth.service';
 
 
 @Component({
@@ -11,9 +12,11 @@ import { ServconectService } from 'src/app/service/servconect.service';
 export class ExpLabComponent implements OnInit {
 
   experiencias: ExpIDB[] = [];
+  status: boolean = false;
 
   constructor(
-    private servconect: ServconectService
+    private servconect: ServconectService,
+    private Auth: AuthService 
   ) { }
 
   ngOnInit(): void {
@@ -21,6 +24,8 @@ export class ExpLabComponent implements OnInit {
     this.servconect.getExp().subscribe((var1) =>(
       this.experiencias = var1
     ))
+
+    this.status = this.Auth.logIn
   }
 
   agregarExperiencia(data: ExpIDB) {

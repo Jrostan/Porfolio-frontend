@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CapIDB } from 'src/Int';
 import { ServconectService } from 'src/app/service/servconect.service';
+import { AuthService } from 'src/app/service/auth.service';
+
 
 @Component({
   selector: 'app-capacitaciones',
@@ -10,9 +12,11 @@ import { ServconectService } from 'src/app/service/servconect.service';
 export class CapacitacionesComponent implements OnInit {
 
   capacitaciones: CapIDB[] = [];
+  status: boolean = false;
 
   constructor(
-    private servconect: ServconectService
+    private servconect: ServconectService,
+    private Auth: AuthService 
   ) { }
 
   ngOnInit(): void {
@@ -20,6 +24,8 @@ export class CapacitacionesComponent implements OnInit {
     this.servconect.getCap().subscribe((var1) =>(
       this.capacitaciones = var1
     ))
+
+    this.status = this.Auth.logIn
   }
   
   agregarCpacitacion(data: CapIDB) {

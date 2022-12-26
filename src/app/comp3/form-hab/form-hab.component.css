@@ -1,0 +1,8 @@
+.formulario-completo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.formulario-completo div{
+    margin: 10px;
+}

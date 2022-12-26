@@ -1,0 +1,7 @@
+.formulario-completo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.formulario-completo div{
+    margin: 10px;
+}

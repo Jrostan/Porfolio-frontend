@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HabIDB } from 'src/Int';
 import { ServconectService } from 'src/app/service/servconect.service';
+import { AuthService } from 'src/app/service/auth.service';
+
 
 @Component({
   selector: 'app-habilidades',
@@ -10,9 +12,11 @@ import { ServconectService } from 'src/app/service/servconect.service';
 export class HabilidadesComponent implements OnInit {
 
   habilidades: HabIDB[] = [];
+  status: boolean = false;
 
   constructor(
-    private servconect: ServconectService
+    private servconect: ServconectService,
+    private Auth: AuthService 
   ) { }
 
   ngOnInit(): void {
@@ -20,6 +24,8 @@ export class HabilidadesComponent implements OnInit {
     this.servconect.getHab().subscribe((var1) =>(
       this.habilidades = var1
     ))
+
+    this.status = this.Auth.logIn
   }
 
   agregarHabilidad(data: HabIDB) {

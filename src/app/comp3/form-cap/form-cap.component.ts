@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { CapIDB } from 'src/Int';
+import { AuthService } from 'src/app/service/auth.service';
 
 @Component({
   selector: 'app-form-cap',
@@ -14,10 +15,14 @@ export class FormCapComponent implements OnInit {
   urlformador: string = "";
   formador: string = "";
 
+  status: boolean = false;
 
-  constructor() { }
+  constructor(
+    private Auth: AuthService
+  ) { }
 
   ngOnInit(): void {
+    this.status = this.Auth.logIn
   }
 
   cargar() {

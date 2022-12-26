@@ -1,5 +1,6 @@
 <app-form-cap
     (agregarCpacitacion)="agregarCpacitacion($event)"
+    *ngIf="!status"
 ></app-form-cap>
 <app-tarjeta-cap
     *ngFor="let t of capacitaciones"

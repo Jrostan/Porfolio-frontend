@@ -5,9 +5,9 @@
         </div>
         <form action="#" id="log-in" method="post" target="_blank">
             <label form="log-in" id="etiqueta-login">
-                <input type="email" id="email" name="email" placeholder="Introdusca su email...">
-                <input type="password" name="password" id="password" placeholder="Contaseña...">
-                <input type="submit" value="Login" id="boton" name="entrar">
+                <input type="email" id="email" name="email" placeholder="Introdusca su email..." *ngIf="status">
+                <input type="password" name="password" id="password" placeholder="Contaseña..." *ngIf="status">
+                <input type="submit" value='{{status ? "Login" : "Logout" }}' id="boton" name="entrar" (btnClick)="Log()">
             </label>
         </form>
     </div>
@@ -33,8 +33,8 @@
         <a routerLink="/capacitaciones">
             <li class="articulo-lista">Capacitaciones</li>
         </a>
-        <a routerLink="/#">
+        <!--<a routerLink="/#">
             <li class="articulo-lista">Contacto</li>
-        </a>
+        </a>-->
     </ul>
 </aside>

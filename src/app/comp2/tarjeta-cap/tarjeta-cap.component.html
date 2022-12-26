@@ -10,7 +10,8 @@
     </div>   
     <div class="delete">
         <fa-icon [icon]="faTimes" class="cruz"
-        (click)="borrarCap(tarjetas)"></fa-icon>
+        (click)="borrarCap(tarjetas)"
+        *ngIf="!status"></fa-icon>
     </div> 
 </div>
 
