@@ -22,10 +22,10 @@ export class CapacitacionesComponent implements OnInit {
   ngOnInit(): void {
 
     this.servconect.getCap().subscribe((var1) =>(
-      this.capacitaciones = var1
+      this.capacitaciones = var1.reverse()
     ))
 
-    this.status = this.Auth.logIn
+    this.status = this.Auth.status
   }
   
   agregarCpacitacion(data: CapIDB) {

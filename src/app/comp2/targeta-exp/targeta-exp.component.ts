@@ -25,7 +25,7 @@ export class TargetaExpComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.status = this.Auth.logIn
+    this.status = this.Auth.status
   }
 
   borrarExp(val: ExpIDB) {

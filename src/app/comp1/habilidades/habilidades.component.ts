@@ -22,10 +22,10 @@ export class HabilidadesComponent implements OnInit {
   ngOnInit(): void {
 
     this.servconect.getHab().subscribe((var1) =>(
-      this.habilidades = var1
+      this.habilidades = var1.reverse()
     ))
 
-    this.status = this.Auth.logIn
+    this.status = this.Auth.status
   }
 
   agregarHabilidad(data: HabIDB) {

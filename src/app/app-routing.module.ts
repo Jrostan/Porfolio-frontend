@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: "experiencias", component:ExpLabComponent},
   {path: "capacitaciones", component:CapacitacionesComponent},
   {path: "habilidades", component:HabilidadesComponent},
-  {path: "**", redirectTo: "experiencias", pathMatch: "full"}, //en el redicto se indica hacia donde se redirecciona
+  {path: "**", redirectTo: "experiencias", pathMatch: "full"}, //en el redirectTo se indica hacia donde se redirecciona
 ];
 
 @NgModule({

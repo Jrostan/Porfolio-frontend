@@ -25,8 +25,8 @@ export interface HabIDB {
 
 export interface CapIDB {
     id?: number;
-    ftitulo: string;
+    titulo: string;
     descripcion: string;
-    url_logo: string;
+    urlLogo: string;
     formador: string;
 }

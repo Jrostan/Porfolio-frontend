@@ -25,7 +25,7 @@ export class TarjetaCapComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.status = this.Auth.logIn
+    this.status = this.Auth.status
   }
 
   borrarCap(val: CapIDB) {

@@ -17,6 +17,7 @@ import { FormCapComponent } from './comp3/form-cap/form-cap.component';
 import { FormExpComponent } from './comp3/form-exp/form-exp.component';
 import { FormHabComponent } from './comp3/form-hab/form-hab.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { interceptorProvider } from './service/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FormsModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [/*interceptorProvider*/],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

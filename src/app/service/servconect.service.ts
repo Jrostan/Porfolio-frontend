@@ -1,9 +1,8 @@
-import { Inject, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { PerfilIBD, ExpIDB, HabIDB, CapIDB  } from 'src/Int';
 import { HttpClient, HttpHeaders, } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { Observable} from 'rxjs';
 
-import { DOCUMENT } from '@angular/common';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -17,12 +16,14 @@ const httpOptions = {
 export class ServconectService {
   
   private apiURL = "http://localhost:3200/";
-
+  private backURL = "http://localhost:8080/";
+  //dir al JSON
   private urlHed = this.apiURL+"perfil/";
   private urlExp = this.apiURL+"experiencia_laboral/";
   private urlHab = this.apiURL+"Habilidades_digitales/";
-  private urlCap = this.apiURL+"capacitaciones/";
-  
+  //private urlCap = this.apiURL+"capacitaciones/";
+  //dir al Back
+  private urlCap = this.backURL+"cap/";
 
   constructor(
     private http:HttpClient
@@ -42,7 +43,7 @@ export class ServconectService {
   }
 
   getCap(): Observable<CapIDB[]> {
-    return this.http.get<CapIDB[]>(this.urlCap);
+    return this.http.get<CapIDB[]>(this.urlCap+"lista");
   }
 
 
@@ -56,7 +57,7 @@ export class ServconectService {
   }
 
   postCap(data: CapIDB): Observable<CapIDB> {
-    return this.http.post<CapIDB>(this.urlCap, data, httpOptions);
+    return this.http.post<CapIDB>(this.urlCap+"create", data, httpOptions);
   }
 
     /*Servicios Delets...*/
@@ -66,7 +67,7 @@ export class ServconectService {
   }
 
   deltCap(data: CapIDB): Observable<CapIDB> {
-    const url = (this.urlCap)+"/"+(data.id);
+    const url = (this.urlCap)+"delete/"+(data.id);
     return this.http.delete<CapIDB>(url)
   }
 

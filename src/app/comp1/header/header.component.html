@@ -3,11 +3,27 @@
         <div id="logo-arg">
             <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1666227203/Dise%C3%B1o%20sin%20t%C3%ADtulo%20%2817%29.png" alt="Logo argentina prograa 3.0 + inti argentina">
         </div>
-        <form action="#" id="log-in" method="post" target="_blank">
+        <form action="#" id="log-in" method="#" target="_blank" #f="ngForm" (ngSubmit)="login()" novalidate>
             <label form="log-in" id="etiqueta-login">
-                <input type="email" id="email" name="email" placeholder="Introdusca su email..." *ngIf="status">
-                <input type="password" name="password" id="password" placeholder="Contaseña..." *ngIf="status">
-                <input type="submit" value='{{status ? "Login" : "Logout" }}' id="boton" name="entrar" (btnClick)="Log()">
+                <input type="text" 
+                    id="nombreUsuario" 
+                    name="nombreUsuario" 
+                    placeholder="Introdusca su Usuario..." 
+                    [(ngModel)]="nombreUsuario" 
+                    required  
+                    *ngIf="!isLogged">
+                <input type="password" 
+                    name="password" 
+                    id="password" 
+                    placeholder="Contaseña..." 
+                    [(ngModel)]="password"
+                    required
+                    *ngIf="!isLogged">
+                <input type="submit" 
+                    value='{{!isLogged ? "Login" : "Logout" }}' 
+                    id="boton" 
+                    name="entrar">
+                    <!--(btnClick)="Log()"> -->
             </label>
         </form>
     </div>

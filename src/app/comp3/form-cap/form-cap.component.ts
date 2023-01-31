@@ -15,14 +15,14 @@ export class FormCapComponent implements OnInit {
   urlformador: string = "";
   formador: string = "";
 
-  status: boolean = false;
+  //status: boolean = false;
 
   constructor(
     private Auth: AuthService
   ) { }
 
   ngOnInit(): void {
-    this.status = this.Auth.logIn
+    //this.status = this.Auth.status
   }
 
   cargar() {
@@ -31,12 +31,12 @@ export class FormCapComponent implements OnInit {
     } else {
 
     const newCap = {
-      ftitulo: this.titulo,
+      titulo: this.titulo,
       descripcion: this.formacion,
-      url_logo: this.urlformador,
+      urlLogo: this.urlformador,
       formador: this.formador
     };
-
+    window.location.reload();
     this.agregarCpacitacion.emit(newCap);
   };
 

@@ -1,35 +1,29 @@
 import { Injectable } from '@angular/core';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { NuevoUsuario } from '../module/nuevo-usuario';
+import { Observable } from 'rxjs';
+import { LoginUsuario } from '../module/login-usuario';
+import { JwtDto } from '../module/jwt-dto';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AuthService {
 
-  url = "http://localhost:3200/api";
-  token: any;
+export class AuthService {
+  status!: boolean; 
+  url = "http://localhost:8080/auth/";
 
   constructor(
     private http: HttpClient,
-    private router: Router
+
   ) { }
 
-  login(email: string, password: string) {
-    this.http.post(this.url + '/autenticarte', {email: email, password: password}).subscribe(
-      (resp: any) => {
-        this.router.navigate(['profile']);
-        localStorage.setItem('auth_token', resp.token);
-      }
-    );
+  public nuevoUsuario(nuevoUsuario: NuevoUsuario): Observable<any>{
+    return this.http.post<any>(this.url + 'nuevo', nuevoUsuario);
   }
 
-  logout() {
-    localStorage.removeItem('token');
-  }
-
-  public get logIn() : boolean {
-   // return (localStorage.getItem('token') !== null)
-   return true
+  public login(loginUsuario: LoginUsuario): Observable<JwtDto>{
+    return this.http.post<JwtDto>(this.url + 'login', loginUsuario)
   }
 }

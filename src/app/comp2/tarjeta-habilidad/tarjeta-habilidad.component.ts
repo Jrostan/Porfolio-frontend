@@ -34,7 +34,7 @@ export class TarjetaHabilidadComponent implements OnInit {
     this.habilidadCss = '"'+this.tarjeta.porcentaje+'%"'
     this.avancePos = (180*(this.tarjeta.porcentaje/100))+"deg"
     this.avanceNeg = '-'+(180*(this.tarjeta.porcentaje/100))+'deg'
-    this.status = this.Auth.logIn
+    this.status = this.Auth.status
   }
 
   borraHab(val: HabIDB) {

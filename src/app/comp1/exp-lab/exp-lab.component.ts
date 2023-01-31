@@ -22,10 +22,11 @@ export class ExpLabComponent implements OnInit {
   ngOnInit(): void {
 
     this.servconect.getExp().subscribe((var1) =>(
-      this.experiencias = var1
+      this.experiencias = var1.reverse()
+      
     ))
 
-    this.status = this.Auth.logIn
+    this.status = this.Auth.status
   }
 
   agregarExperiencia(data: ExpIDB) {

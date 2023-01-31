@@ -91,6 +91,13 @@
       "porcentaje": "20",
       "colorBaraFuerte": "rgb(163, 22, 22)",
       "colorBaraDebil": "rgba(163, 22, 22,0.2)"
+    },
+    {
+      "tecnologia": "Java",
+      "porcentaje": 10,
+      "colorBaraFuerte": "#0000ff",
+      "colorBaraDebil": "rgba(0,0,255,0.2)",
+      "id": 5
     }
   ],
   "capacitaciones": [
