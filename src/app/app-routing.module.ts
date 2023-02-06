@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { ExpLabComponent } from './comp1/exp-lab/exp-lab.component'; 
 import { CapacitacionesComponent } from "./comp1/capacitaciones/capacitaciones.component"
 import { HabilidadesComponent } from "./comp1/habilidades/habilidades.component"
+import { EditCapComponent } from './comp4/edit-cap/edit-cap.component';
 
 
 const routes: Routes = [
   {path: "experiencias", component:ExpLabComponent},
   {path: "capacitaciones", component:CapacitacionesComponent},
   {path: "habilidades", component:HabilidadesComponent},
+  {path: "editcap", component:EditCapComponent},
   {path: "**", redirectTo: "experiencias", pathMatch: "full"}, //en el redirectTo se indica hacia donde se redirecciona
 ];
 

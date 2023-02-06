@@ -60,7 +60,7 @@ export class ServconectService {
     return this.http.post<CapIDB>(this.urlCap+"create", data, httpOptions);
   }
 
-    /*Servicios Delets...*/
+    /*Servicios Deletes...*/
   deltHab(data: HabIDB): Observable<HabIDB> {
     const url = (this.urlHab)+"/"+(data.id);
     return this.http.delete<HabIDB>(url)
@@ -76,4 +76,9 @@ export class ServconectService {
     return this.http.delete<ExpIDB>(url)
   }
 
+  /*Servicios Puts*/
+  upCap(data: CapIDB): Observable<CapIDB> {
+    const url = this.urlCap+"update/"+(data.id);
+    return this.http.put<CapIDB>(url, data, httpOptions)
+  }
 }

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,7 +17,8 @@ import { FormCapComponent } from './comp3/form-cap/form-cap.component';
 import { FormExpComponent } from './comp3/form-exp/form-exp.component';
 import { FormHabComponent } from './comp3/form-hab/form-hab.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { interceptorProvider } from './service/interceptor-service';
+import { InterceptorService } from './service/interceptor-service';
+import { EditCapComponent } from './comp4/edit-cap/edit-cap.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { interceptorProvider } from './service/interceptor-service';
     TarjetaHabilidadComponent,
     FormCapComponent,
     FormExpComponent,
-    FormHabComponent
+    FormHabComponent,
+    EditCapComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,13 @@ import { interceptorProvider } from './service/interceptor-service';
     FormsModule,
     FontAwesomeModule
   ],
-  providers: [/*interceptorProvider*/],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: InterceptorService,
+      multi: true //india a angular que tu app trabaja con multiples proveedores
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
