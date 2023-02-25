@@ -1,0 +1,19 @@
+<div class="container">
+    <a [href]="tarjetas.link" class="ancla">
+        <div class="cont2">
+            <div class="foto">
+                <img [src]="tarjetas.urlImagen" [alt]="altImg">
+            </div>
+                <h2 class="titulo">{{tarjetas.proyecto}}</h2>
+                <p class="des">{{tarjetas.descripcion}}</p>
+        </div>
+    </a>
+    <div class="menuadm" *ngIf="status">
+        <a (click)="borrarPro(tarjetas)">
+            <i class="fa-solid fa-xmark cruz"></i>
+        </a>
+        <a (click)="editPro(tarjetas)">
+            <i class="fa-solid fa-pen pen"></i>
+        </a>
+    </div>
+</div>

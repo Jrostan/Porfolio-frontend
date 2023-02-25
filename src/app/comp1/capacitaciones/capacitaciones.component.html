@@ -1,9 +1,13 @@
-<app-form-cap
-    (agregarCpacitacion)="agregarCpacitacion($event)"
-    *ngIf="status"
-></app-form-cap>
-<app-tarjeta-cap
-    *ngFor="let t of capacitaciones"
-    [tarjetas] = "t"
-    (deletCapacitaciones)="borrar(t)"
-></app-tarjeta-cap>
+<div class="capacitaciones">
+    <app-form-cap
+        (agregarCpacitacion)="agregarCpacitacion($event)"
+        *ngIf="status"
+    ></app-form-cap>
+    <div class="contenedor-capacitaciones">
+        <app-tarjeta-cap
+            *ngFor="let t of capacitaciones"
+            [tarjetas] = "t"
+            (deletCapacitaciones)="borrar(t)"
+        ></app-tarjeta-cap>
+    </div>
+</div>

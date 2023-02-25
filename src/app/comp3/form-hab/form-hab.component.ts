@@ -11,7 +11,8 @@ export class FormHabComponent implements OnInit {
 
   tecno: string = "";
   porcentaje: number = 0;
-  colorBarra: string = "";
+  colorBarra: string = "#000000";
+  colorBarraFuerte: string = "";
   colorBarraDebil: string = "";
 
   constructor() { }
@@ -42,11 +43,11 @@ export class FormHabComponent implements OnInit {
       const newHab = {
         tecnologia: this.tecno,
         porcentaje: this.porcentaje,
-        colorBaraFuerte: this.colorBarra,
-        colorBaraDebil: this.colorBarraDebil
+        colorBarraFuerte: this.colorBarra,
+        colorBarraDebil: this.colorBarraDebil
       };
-        console.log(newHab);
-      this.agregarHabilidad.emit(newHab);
+        window.location.reload();
+        this.agregarHabilidad.emit(newHab);
 
     }
   }

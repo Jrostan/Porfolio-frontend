@@ -19,8 +19,7 @@ export class TarjetaCapComponent implements OnInit {
   desc!: string;
 
   @Output() deletCapacitaciones: EventEmitter<CapIDB> = new EventEmitter;
-  @Output() editCapacitaciones: EventEmitter<CapIDB> = new EventEmitter;
-
+  
   @Input() tarjetas!: CapIDB
 
   constructor(

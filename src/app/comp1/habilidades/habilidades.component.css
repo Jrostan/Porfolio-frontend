@@ -1,3 +1,30 @@
+.habilidaes{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+
+app-form-hab{
+    border: 2px solid rgb(44, 75, 141);
+    width: 95%;
+    justify-self: flex-start;
+}
+
+#contenedor-habilidades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: space-evenly;
+    height: max-content;
+}
+
+app-tarjeta-habilidad{
+    overflow: hidden;
+}
+/*
 #prehab{
     display: flex;
     flex-direction: row;
@@ -20,3 +47,14 @@
     color: var(--colorcontraste, silver);
     margin-left: 0;
 }
+
+
+.formulario-completo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.formulario-completo div{
+    margin: 10px;
+}
+*/

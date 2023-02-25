@@ -1,8 +1,9 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { HabIDB } from 'src/Int';
-import { ServconectService } from 'src/app/service/servconect.service';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { AuthService } from 'src/app/service/auth.service';
+import { Router } from '@angular/router';
+import { MoveService } from 'src/app/service/move.service';
+import { TokenService } from 'src/app/service/token.service';
 
 
 
@@ -25,20 +26,32 @@ export class TarjetaHabilidadComponent implements OnInit {
   avanceNeg!: string;
 
   constructor(
-    private servconect: ServconectService,
-    private Auth: AuthService 
+    private router: Router,
+    private move: MoveService,
+    private tokeService: TokenService
   ) { }
 
   ngOnInit(): void {
+
+    if(this.tokeService.getToken()){
+      this.status = true;
+    } else {
+      this.status = false;
+    };
+
     this.textoCss ='"'+this.tarjeta.tecnologia+'"'
     this.habilidadCss = '"'+this.tarjeta.porcentaje+'%"'
     this.avancePos = (180*(this.tarjeta.porcentaje/100))+"deg"
     this.avanceNeg = '-'+(180*(this.tarjeta.porcentaje/100))+'deg'
-    this.status = this.Auth.status
-  }
+      }
 
-  borraHab(val: HabIDB) {
+  borrarHab(val: HabIDB) {
     this.deletHabilidad.emit(val)
   };
+
+  editHab(val: HabIDB) {
+    this.move.editHab(val)
+    this.router.navigate(["edithab"])
+  }
   
 }

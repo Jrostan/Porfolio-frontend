@@ -1,7 +1,28 @@
 .formulario-completo{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    background-color: silver;
 }
-.formulario-completo div{
-    margin: 10px;
+
+label{
+    text-decoration: underline;
+    font-size: large;
+}
+
+input{
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+.form-cap-control{
+    display: flex;
+    flex-direction: column;
+}
+
+.descripcion{
+    order: 1;
+}
+
+.enviar{
+    order: 2;
 }

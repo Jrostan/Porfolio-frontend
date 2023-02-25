@@ -15,24 +15,21 @@ export class EditCapComponent implements OnInit {
 
   constructor(
     private servConect: ServconectService,
-    private activatedRouter: ActivatedRoute,
     private router: Router,
     private move: MoveService
   ) { }
 
   ngOnInit(): void {
     this.cap = this.move.emitCap()
-    console.log(this.cap.descripcion);
   }
 
   onUpdate(): void{
-    console.log(this.cap);
     const id = this.cap.id;
     this.servConect.upCap(this.cap).subscribe(
       data => {
         this.router.navigate(["capacitaciones"])
       }, err => {
-        alert("Error al modificar experiencia");
+        alert("Error al modificar capacitaciones");
       }
     )
   }

@@ -1,0 +1,21 @@
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+app-form-pro {
+    border: 2px solid rgb(44, 75, 141);
+    width: 95%;
+}
+
+.contenedor-proyecto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+app-tarjeta-pro {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

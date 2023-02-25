@@ -1,0 +1,16 @@
+<div class="general">
+    <div class="contenedor-imagen">
+        <img id="foto" [src]="datosPerfil[0].urlFoto" alt="Foto del crador del porfolio">
+    </div>
+    <div class="infopersonal">
+        <div class="personal">
+            <h1 class="nombre">{{datosPerfil[0].nombre}}</h1>
+            <h2 class="titulo">{{datosPerfil[0].titulo}}</h2>
+            <h3 class="hubicacion">{{datosPerfil[0].oriundo}}</h3>
+            <P>{{datosPerfil[0].descripcion}}</P>
+        </div>
+    </div>
+    <a (click)="editPerfil(datosPerfil[0])" *ngIf="status">
+        <i class="fa-solid fa-pen pen"></i>
+    </a>
+</div>

@@ -26,15 +26,6 @@
             </label>
         </form>
     </div>
-    <div id="banner-contenedor-foto">
-        <div id="contenedor-foto">
-            <img [src]="datosPerfil[0].foto" alt="Foto del crador del porfolio">
-        </div>
-        <div id="info-banner">
-            <h2>{{datosPerfil[0].nombre}}</h2>
-            <p>{{datosPerfil[0].descripcion}}</p>
-        </div>
-    </div>   
 </header>
 
 <aside id="aside-contenedor">
@@ -45,11 +36,14 @@
         <a routerLink="/habilidades">
             <li class="articulo-lista">Habilidades</li>
         </a>
+        <a routerLink="/home">
+            <li class="articulo-lista">Home</li>
+        </a>
         <a routerLink="/capacitaciones">
             <li class="articulo-lista">Capacitaciones</li>
         </a>
-        <!--<a routerLink="/#">
-            <li class="articulo-lista">Contacto</li>
-        </a>-->
+        <a routerLink="/proyectos">
+            <li class="articulo-lista">Proyectos</li>
+        </a>
     </ul>
 </aside>

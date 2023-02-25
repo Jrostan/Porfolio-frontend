@@ -8,7 +8,7 @@ import { AuthService } from 'src/app/service/auth.service';
   styleUrls: ['./form-cap.component.css']
 })
 export class FormCapComponent implements OnInit {
-@Output() agregarCpacitacion: EventEmitter<CapIDB> = new EventEmitter();
+  @Output() agregarCpacitacion: EventEmitter<CapIDB> = new EventEmitter();
 
   titulo: string = "";
   formacion: string = "";
@@ -22,28 +22,21 @@ export class FormCapComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    //this.status = this.Auth.status
   }
 
   cargar() {
-    if((this.titulo.length === 0 || this.formacion.length === 0) || (this.urlformador.length === 0 || this.formador.length === 0)) {
+    if ((this.titulo.length === 0 || this.formacion.length === 0) || (this.urlformador.length === 0 || this.formador.length === 0)) {
       alert("por favor complete todos los campos necesarios")
     } else {
 
-    const newCap = {
-      titulo: this.titulo,
-      descripcion: this.formacion,
-      urlLogo: this.urlformador,
-      formador: this.formador
+      const newCap = {
+        titulo: this.titulo,
+        descripcion: this.formacion,
+        urlLogo: this.urlformador,
+        formador: this.formador
+      };
+      window.location.reload();
+      this.agregarCpacitacion.emit(newCap);
     };
-    window.location.reload();
-    this.agregarCpacitacion.emit(newCap);
-  };
-
-  /*  limpiar():void {
-    this.titulo = "";
-    this.formacion = "";
-    this.urlformador = "";
-    this.formador = "";*/
   }
 }

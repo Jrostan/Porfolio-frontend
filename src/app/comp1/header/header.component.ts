@@ -22,9 +22,6 @@ export class HeaderComponent implements OnInit {
   errMsj!: string;
 
 
-  //variables de contenido
-  datosPerfil: PerfilIBD[] = []; 
-
   //variables de aspecto
   color: string = "red";
 
@@ -34,7 +31,7 @@ export class HeaderComponent implements OnInit {
     private servconect: ServconectService,
     private Auth: AuthService,
     private tokenservis: TokenService,
-    private router: Router // no lo estoy usando
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -44,10 +41,6 @@ export class HeaderComponent implements OnInit {
       this.roles = this.tokenservis.getAuthorities();
     };
     
-    this.servconect.getPerfil().subscribe((var1) =>(
-      this.datosPerfil = var1
-    ));
-    
   }
 
   login(): void{
@@ -55,7 +48,8 @@ export class HeaderComponent implements OnInit {
       this.Auth.status = false;
       this.isLogged = !this.isLogged;
       this.tokenservis.logOut();
-      window.location.reload();
+     
+      this.router.navigate(['']);
     } else {
       this.onLogin()
     }
@@ -71,7 +65,7 @@ export class HeaderComponent implements OnInit {
       this.tokenservis.setAuthorities(data.authorities);
       this.roles = data.authorities;
       this.Auth.status = true;
-      this.router.navigate(['']);
+      window.location.reload();
     }, err =>{
       this.isLogged = false;
       this.isLogginFail = true;

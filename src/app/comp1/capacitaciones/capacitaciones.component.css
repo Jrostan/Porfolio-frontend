@@ -1,0 +1,20 @@
+.capacitaciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+app-form-cap{
+    border: 2px solid rgb(44, 75, 141);
+    width: 100%;
+}
+
+.contenedor-capacitaciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+app-tarjeta-cap{
+    width: 100%;
+}

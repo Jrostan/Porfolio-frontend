@@ -10,10 +10,10 @@ export class FormExpComponent implements OnInit {
   @Output() agregarExperiencia: EventEmitter<ExpIDB> = new EventEmitter();
 
   puesto: string = "";
-  descpuesto: string = "";
-  inicio: string = "";
-  fin: string = "";
-  lugar: string = "";
+  descPuesto: string = "";
+  fechainicio: string = "";
+  fechaFinal: string = "";
+  empresa: string = "";
   logo: string = "";
 
   constructor() { }
@@ -22,19 +22,19 @@ export class FormExpComponent implements OnInit {
   }
 
   cargarExp() {
-    if((this.puesto.length === 0 || this.descpuesto.length === 0) || (this.inicio.length === 0 || this.lugar.length === 0)) {
+    if((this.puesto.length === 0 || this.descPuesto.length === 0) || (this.fechainicio.length === 0 || this.empresa.length === 0)) {
       alert("por favor complete todos los campos necesarios")
     } else {
 
     const newExp = {
       puesto: this.puesto,
-      inicio: this.inicio,
-      final: this.fin,
-      dec_puesto: this.descpuesto,
-      empresa: this.lugar,
-      url_logo: this.logo
+      fechainicio: this.fechainicio,
+      fechaFinal: this.fechaFinal,
+      descPuesto: this.descPuesto,
+      empresa: this.empresa,
+      urlLogo: this.logo
     };
-
+    window.location.reload();
     this.agregarExperiencia.emit(newExp);
   };
   }

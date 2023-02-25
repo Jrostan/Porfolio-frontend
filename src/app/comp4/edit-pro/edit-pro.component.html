@@ -1,0 +1,31 @@
+<form class="formulario-completo" (ngSubmit)="onUpdate()">
+    <div class="for-pro-control">
+        <label for="proyecto" class="proyecto">Proyecto: </label>
+        <input type="text" name="proyecto" id="proyecto" placeholder="introdusca el nuevo proyecto"
+        [(ngModel)]="pro.proyecto">
+    </div>
+
+    <div class="for-pro-control descripcion">
+        <label for="descripcion" class="proyecto">Descripcion: </label>
+        <textarea type="text" name="descripcion" id="descripcion" placeholder="introdusca una breve descripcion del proyecto"
+        wrap="hard"
+        [(ngModel)]="pro.descripcion"></textarea>
+    </div>
+
+    <div class="for-pro-control">
+        <label for="urlImagen" class="proyecto">Url de la imagen: </label>
+        <input type="text" name="urlImagen" id="urlImagen" placeholder="introdusca la URL de la imagen"
+        [(ngModel)]="pro.urlImagen">
+    </div>
+
+    <div class="for-pro-control">
+        <label for="link" class="proyecto">Link: </label>
+        <input type="text" name="link" id="link" placeholder="introdusca el link del sitio"
+        [(ngModel)]="pro.link">
+    </div>
+    
+    <div class="for-pro-control enviar">
+        <label for="enviar"></label>
+            <input type="submit" name="enviar" id="enviar" value="Editar">
+    </div>
+</form>

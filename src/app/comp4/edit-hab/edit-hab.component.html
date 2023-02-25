@@ -1,0 +1,26 @@
+<form class="formulario-completo" (ngSubmit)="onUpdate()">
+    <div class="form-cap-control">
+        <label for="tecnolofia">Tecnologia:</label>
+            <input type="text" name="tecnologia" id="tecnologia" placeholder="Que tecnologia conoce?"
+            [(ngModel)]="hab.tecnologia">
+    </div>
+
+    <div class="form-cap-control">
+        <label for="porcentaje">% Tecnologia:</label>
+            <input type="number" name="porcentaje" id="porcentaje" placeholder="Porcentaje del dominio en esta tecnologia?" max="100" min="1"
+            [(ngModel)]="hab.porcentaje">
+    </div>
+
+    <div class="form-cap-control">
+        <label for="colorBarra">Color barra rep.:</label>
+            <input type="color" name="colorBarra" id="colorBarra"
+            [value]="hab.colorBarraFuerte"
+            [(ngModel)]="hab.colorBarraFuerte">
+    </div>
+
+    <div class="form-cap-control">
+        <label for="enviar"></label>
+            <input type="submit" name="enviar" value="Editar">
+    </div>
+
+</form>

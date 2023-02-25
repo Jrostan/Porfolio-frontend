@@ -1,16 +1,20 @@
 <div class="contenedor-experiencia-laboral">
     <h2 class="titulo-experiencia-laboral">{{tarjetas.puesto}}</h2>
-    <h3 class="fecha-experiencia-laboral">Desde <time class="entrada" datetime="07/2008">{{tarjetas.inicio}}</time> hasta <time class="salida" datetime="02/2010"> {{tarjetas.final}}</time>.</h3>
-    <p class="descripcion-puesto">{{tarjetas.dec_puesto}}</p>
+    <h3 class="fecha-experiencia-laboral">Desde <time class="entrada" datetime="07/2008">{{tarjetas.fechainicio}}</time> hasta <time class="salida" datetime="02/2010"> {{tarjetas.fechaFinal}}</time>.</h3>
+    <p class="descripcion-puesto">{{tarjetas.descPuesto}}</p>
     <div class="contenedor-empresa">
         <div class="contenedor-logo">
-            <img [src]="tarjetas.url_logo" [alt]="'Logo '+tarjetas.empresa" class="logo-empresa">
+            <img [src]="tarjetas.urlLogo" [alt]="'Logo '+tarjetas.empresa" class="logo-empresa">
         </div>
         <h3 class="nombre-empresa">{{tarjetas.empresa}}</h3>
     </div>
-    <div class="delete">
-        <fa-icon [icon]="faTimes" class="cruz"
-        (click)="borrarExp(tarjetas)"
-        *ngIf="status"></fa-icon>
+
+    <div class="menu" *ngIf="status">
+        <a (click)="borrarExp(tarjetas)">
+            <i class="fa-solid fa-xmark cruz"></i>
+        </a>
+        <a (click)="editExp(tarjetas)">
+            <i class="fa-solid fa-pen pen"></i>
+        </a>
     </div>
 </div>

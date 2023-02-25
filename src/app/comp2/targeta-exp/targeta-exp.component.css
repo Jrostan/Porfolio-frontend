@@ -68,3 +68,17 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+.pen{
+    color: green;
+    margin-left: 5px;
+    transform: scale(0.8);
+}
+
+.pen:hover{
+    color: white;
+    background-color: green;
+    border: solid 0px green;
+    border-radius: 50%;
+    cursor: pointer;
+}

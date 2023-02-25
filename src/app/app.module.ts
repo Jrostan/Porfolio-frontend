@@ -19,6 +19,15 @@ import { FormHabComponent } from './comp3/form-hab/form-hab.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { InterceptorService } from './service/interceptor-service';
 import { EditCapComponent } from './comp4/edit-cap/edit-cap.component';
+import { EditHabComponent } from './comp4/edit-hab/edit-hab.component';
+import { EditExpComponent } from './comp4/edit-exp/edit-exp.component';
+import { ProyectosComponent } from './comp1/proyectos/proyectos.component';
+import { HomeComponent } from './comp1/home/home.component';
+import { FooterComponent } from './comp1/footer/footer.component';
+import { EditPerComponent } from './comp4/edit-per/edit-per.component';
+import { TarjetaProComponent } from './comp2/tarjeta-pro/tarjeta-pro.component';
+import { FormProComponent } from './comp3/form-pro/form-pro.component';
+import { EditProComponent } from './comp4/edit-pro/edit-pro.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +43,15 @@ import { EditCapComponent } from './comp4/edit-cap/edit-cap.component';
     FormExpComponent,
     FormHabComponent,
     EditCapComponent,
+    EditHabComponent,
+    EditExpComponent,
+    ProyectosComponent,
+    HomeComponent,
+    FooterComponent,
+    EditPerComponent,
+    TarjetaProComponent,
+    FormProComponent,
+    EditProComponent,
   ],
   imports: [
     BrowserModule,

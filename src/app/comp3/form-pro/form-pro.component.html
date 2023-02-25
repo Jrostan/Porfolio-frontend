@@ -1,0 +1,30 @@
+<form class="formulario-completo" (ngSubmit)="cargarProyecto()">
+    <div class="for-pro-control">
+        <label for="proyecto" class="proyecto">Proyecto: </label>
+        <input type="text" name="proyecto" id="proyecto" placeholder="introdusca el nuevo proyecto"
+        [(ngModel)]="proyecto">
+    </div>
+
+    <div class="for-pro-control descripcion">
+        <label for="descripcion" class="proyecto">Descripcion: </label>
+        <input type="text" name="descripcion" id="descripcion" placeholder="introdusca una breve descripcion del proyecto"
+        [(ngModel)]="descripcion">
+    </div>
+
+    <div class="for-pro-control">
+        <label for="urlImagen" class="proyecto">Url de la imagen: </label>
+        <input type="text" name="urlImagen" id="urlImagen" placeholder="introdusca la URL de la imagen"
+        [(ngModel)]="urlImagen">
+    </div>
+
+    <div class="for-pro-control">
+        <label for="link" class="proyecto">Link: </label>
+        <input type="text" name="link" id="link" placeholder="introdusca el link del sitio"
+        [(ngModel)]="link">
+    </div>
+    
+    <div class="for-pro-control enviar">
+        <label for="enviar"></label>
+            <input type="submit" name="enviar" id="enviar" value="Agregar">
+    </div>
+</form>

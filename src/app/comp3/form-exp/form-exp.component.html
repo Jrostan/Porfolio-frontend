@@ -5,28 +5,28 @@
             [(ngModel)]="puesto">
     </div>
 
-    <div class="form-hab-control">
+    <div class="form-hab-control descripcion">
         <label for="descpuesto">Descripcion puesto:</label>
             <input type="text" name="descpuesto" id="descpuesto" placeholder="Introdusca una brebe descripcionde sus tareas..."
-            [(ngModel)]="descpuesto">
+            [(ngModel)]="descPuesto">
     </div>
 
     <div class="form-hab-control">
         <label for="inicio">Fecha de inicio:</label>
             <input type="mes" name="inicio" id="inicio" placeholder="MM / YYYY"
-            [(ngModel)]="inicio">
+            [(ngModel)]="fechainicio">
     </div>
 
     <div class="form-hab-control">
         <label for="fin">Fecha de fin:</label>
             <input type="text" name="fin" id="fin" placeholder="MM / YYYY"
-            [(ngModel)]="fin">
+            [(ngModel)]="fechaFinal">
     </div>
 
     <div class="form-hab-control">
         <label for="lugar">Institucion:</label>
             <input type="text" name="lugar" id="lugar" placeholder="Donde?"
-            [(ngModel)]="lugar">
+            [(ngModel)]="empresa">
     </div>
 
     <div class="form-hab-control">
@@ -35,8 +35,8 @@
             [(ngModel)]="logo">
     </div>
 
-    <div class="form-cap-control">
+    <div class="form-cap-control enviar">
         <label for="enviar"></label>
-            <input type="submit" name="enviar" value="Agregar">
+            <input type="submit" name="enviar" id="enviar" value="Agregar">
     </div>
 </form>

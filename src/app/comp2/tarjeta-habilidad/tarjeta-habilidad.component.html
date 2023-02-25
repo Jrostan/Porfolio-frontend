@@ -1,17 +1,17 @@
-<div id="contenedor-habilidades"
-[ngStyle]="{'--colorBaraFuerte': tarjeta.colorBaraFuerte,
- '--colorBaraDebil': tarjeta.colorBaraDebil,
+<div id="contenedor-habilidades" [ngStyle]="{'--colorBaraFuerte': tarjeta.colorBarraFuerte,
+ '--colorBaraDebil': tarjeta.colorBarraDebil,
  '--tecnologia': textoCss,
  '--habilidad': habilidadCss,
  '--avancePos': avancePos,
- '--avanceNeg': avanceNeg}"
->
-    <div id="html"
-    class="barras-de-progreso-circular"
-    ></div>
-    <div class="delete">
-        <fa-icon [icon]="faTimes" class="cruz"
-        (click)="borraHab(tarjeta)"
-        *ngIf="status"></fa-icon>
+ '--avanceNeg': avanceNeg}">
+    <div id="html" class="barras-de-progreso-circular"></div>
+
+    <div class="menu" *ngIf="status">
+        <a (click)="borrarHab(tarjeta)">
+            <i class="fa-solid fa-xmark cruz"></i>
+        </a>
+        <a (click)="editHab(tarjeta)">
+            <i class="fa-solid fa-pen pen"></i>
+        </a>
     </div>
 </div>

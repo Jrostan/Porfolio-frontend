@@ -1,11 +1,13 @@
-<app-form-hab
-    (agregarHabilidad)="agregarHabilidad($event)"
-    *ngIf="status"
-></app-form-hab>
-<div id="prehab">
-<app-tarjeta-habilidad id="Habilidades"
-    *ngFor="let t of habilidades"
-    [tarjeta] = "t"
-    (deletHabilidad)="borrar(t)"
-></app-tarjeta-habilidad>
+<div class="habilidaes">
+    <app-form-hab
+        (agregarHabilidad)="agregarHabilidad($event)"
+        *ngIf="status"
+    ></app-form-hab>
+    <div id="contenedor-habilidades">
+        <app-tarjeta-habilidad id="Habilidades"
+            *ngFor="let t of habilidades"
+            [tarjeta] = "t"
+            (deletHabilidad)="borrar(t)"
+        ></app-tarjeta-habilidad>
+    </div>
 </div>

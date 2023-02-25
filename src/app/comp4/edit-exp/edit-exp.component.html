@@ -1,0 +1,43 @@
+<form class="formulario-completo" (ngSubmit)="onUpdate()">
+    <div class="form-hab-control">
+        <label for="puesto">Puesto:</label>
+            <input type="text" name="puesto" id="puesto" placeholder="Introdusca en cargo desempeñado"
+            [(ngModel)]="exp.puesto">
+    </div>
+
+    <div class="form-hab-control descripcion">
+        <label for="descpuesto">Descripcion puesto:</label>
+            <textarea type="text" name="descpuesto" id="descpuesto" placeholder="Introdusca una brebe descripcionde sus tareas..."
+            wrap="hard"
+            [(ngModel)]="exp.descPuesto"></textarea>
+    </div>
+
+    <div class="form-hab-control">
+        <label for="inicio">Fecha de inicio:</label>
+            <input type="mes" name="inicio" id="inicio" placeholder="MM / YYYY"
+            [(ngModel)]="exp.fechainicio">
+    </div>
+
+    <div class="form-hab-control">
+        <label for="fin">Fecha de fin:</label>
+            <input type="text" name="fin" id="fin" placeholder="MM / YYYY"
+            [(ngModel)]="exp.fechaFinal">
+    </div>
+
+    <div class="form-hab-control">
+        <label for="lugar">Institucion:</label>
+            <input type="text" name="lugar" id="lugar" placeholder="Donde?"
+            [(ngModel)]="exp.empresa">
+    </div>
+
+    <div class="form-hab-control">
+        <label for="urllogo">Logo institucion:</label>
+            <input type="text" name="urllogo" id="urllogo" placeholder="Direccion del logo..."
+            [(ngModel)]="exp.urlLogo">
+    </div>
+
+    <div class="form-cap-control enviar">
+        <label for="enviar"></label>
+            <input type="submit" name="enviar" id="enviar"  value="Editar">
+    </div>
+</form>

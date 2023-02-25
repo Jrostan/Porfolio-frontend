@@ -1,0 +1,12 @@
+<div class="proyectos">
+    <app-form-pro
+        (agregarProyecto)="agregarProyecto($event)"
+        *ngIf="status"
+        ></app-form-pro>
+    <div class="contenedor-proyecto">
+        <app-tarjeta-pro
+        *ngFor="let t of proyectos"
+        [tarjetas] = "t"
+        (deletProyecto)="borrar(t)"></app-tarjeta-pro>
+    </div>
+</div>

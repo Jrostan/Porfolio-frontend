@@ -1,0 +1,37 @@
+<form class="formulario-completo" (ngSubmit)="onUpdate()">
+    <div class="form-per-control">
+        <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Introdusca el nombre completo..."
+            [(ngModel)]="per.nombre">
+    </div>
+
+    <div class="form-per-control descripcion">
+        <label for="descripcion">Descripcion personal:</label>
+            <textarea type="text" name="descripcion" id="descripcion" placeholder="Introdusca una brebe descripcionde si mismo..."
+            wrap="hard"
+            [(ngModel)]="per.descripcion"></textarea>
+    </div>
+
+    <div class="form-per-control">
+        <label for="titulo">Titulo:</label>
+            <input type="text" name="titulo" id="titulo"
+            [(ngModel)]="per.titulo">
+    </div>
+
+    <div class="form-per-control">
+        <label for="oriundo">De donde es:</label>
+            <input type="text" name="oriundo" id="oriundo" placeholder="De donde es?"
+            [(ngModel)]="per.oriundo">
+    </div>
+
+    <div class="form-per-control">
+        <label for="urlFoto">Imagen:</label>
+            <input type="text" name="urlFoto" id="urlFoto" placeholder="URL de la Foto"
+            [(ngModel)]="per.urlFoto">
+    </div>
+
+    <div class="form-per-control enviar">
+        <label for="enviar"></label>
+            <input type="submit" name="enviar" id="enviar"  value="Editar">
+    </div>
+</form>

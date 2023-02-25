@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HabIDB } from 'src/Int';
 import { ServconectService } from 'src/app/service/servconect.service';
 import { AuthService } from 'src/app/service/auth.service';
-
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-habilidades',
@@ -16,16 +16,20 @@ export class HabilidadesComponent implements OnInit {
 
   constructor(
     private servconect: ServconectService,
-    private Auth: AuthService 
+    private tokeService: TokenService 
   ) { }
 
   ngOnInit(): void {
+    if(this.tokeService.getToken()){
+      this.status = true;
+    } else {
+      this.status = false;
+    }
 
     this.servconect.getHab().subscribe((var1) =>(
       this.habilidades = var1.reverse()
     ))
 
-    this.status = this.Auth.status
   }
 
   agregarHabilidad(data: HabIDB) {

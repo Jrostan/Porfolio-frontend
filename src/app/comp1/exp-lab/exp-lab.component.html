@@ -1,12 +1,14 @@
-<app-form-exp
-(agregarExperiencia)="agregarExperiencia($event)"
-*ngIf="status"
-></app-form-exp>
-<div class="contenedor-experiencia-laboral">
-    <app-targeta-exp 
-        *ngFor="let t of experiencias"
-        [tarjetas] = "t"
-        (deletExperiencia)="borrar(t)"
-        >
-    </app-targeta-exp>
+<div class="experiencias">
+    <app-form-exp
+        (agregarExperiencia)="agregarExperiencia($event)"
+        *ngIf="status"
+        ></app-form-exp>
+    <div class="contenedor-experiencia-laboral">
+        <app-targeta-exp 
+            *ngFor="let t of experiencias"
+            [tarjetas] = "t"
+            (deletExperiencia)="borrar(t)"
+            >
+        </app-targeta-exp>
+    </div>
 </div>

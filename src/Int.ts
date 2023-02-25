@@ -2,25 +2,27 @@ export interface PerfilIBD {
     id?: number;
     nombre: string;
     descripcion: string;
-    foto: string;
+    urlFoto: string;
+    oriundo: string;
+    titulo: string;
 }
 
 export interface ExpIDB {
     id?: number;
     puesto: string;
-    inicio: String;
-    final: String;
-    dec_puesto: string;
+    fechainicio: String;
+    fechaFinal: String;
+    descPuesto: string;
     empresa: string;
-    url_logo: string;
+    urlLogo: string;
 }
 
 export interface HabIDB {
     id?: number;
     tecnologia: string;
     porcentaje: number;
-    colorBaraFuerte: string;
-    colorBaraDebil: string;
+    colorBarraFuerte: string;
+    colorBarraDebil: string;
 }
 
 export interface CapIDB {
@@ -29,4 +31,12 @@ export interface CapIDB {
     descripcion: string;
     urlLogo: string;
     formador: string;
+}
+
+export interface TpIDB {
+    id?: number;
+    proyecto: string;
+    descripcion: string;
+    urlImagen: string;
+    link: string;
 }
