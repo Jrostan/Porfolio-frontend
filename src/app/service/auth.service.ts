@@ -11,7 +11,7 @@ import { JwtDto } from '../module/jwt-dto';
 
 export class AuthService {
   status!: boolean; 
-  url = "http://localhost:8080/auth/";
+  url = "https://jrostanback.onrender.com/auth/";
 
   constructor(
     private http: HttpClient,

@@ -15,7 +15,7 @@ const httpOptions = {
 })
 export class ServconectService {
   
-  private backURL = "http://localhost:8080/";
+  private backURL = "https://jrostanback.onrender.com/";
  //dir al Back
   private urlCap = this.backURL+"cap/";
   private urlExp = this.backURL+"exp/";
